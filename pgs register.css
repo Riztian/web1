@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-image: url("pgs\ 3.jpg");
+    background-size: 1950px;
+}
+.container{
+    position: relative;
+    max-width: px;
+    width: 100%;
+    background: #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgb(0, 0, 0,0.1);
+
+
+}
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 5000;
+    text-align: center;
+}
+.container.form{
+    margin-top: 30px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-box label{
+    color: #333;
+}
+.form .input-box input {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding:  0 15px;
+}
+.form :where(.input-box input, section-box){
+    position: relative;
+    height: 40px;
+    width: 800px;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+.input-box input:focus{
+    box-shadow: 0 1px 0 rgb(0, 0, 0,0.1);
+}
+.form .column{
+    display: flex;
+    column-gap: 200px;
+}
+.form .gender{
+    margin-top: 20px;
+}
+.gender h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gdr){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gtr{
+    column-gap: 5px;
+}
+.gtr input{
+    accent-color: rgb(130, 106, 251);
+}
+.form :where(.gtr input, .gdr label){
+    cursor: pointer;
+}
+.gdr label{
+    color: #707070;
+}
+.form button{
+    height: 55px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background:  linear-gradient(to right,  #00b09b, #96c93d);
+}
+.form button:hover{
+    background: rgb(88, 56, 250);
+}
+@media screen and (max-width:500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+
+}
